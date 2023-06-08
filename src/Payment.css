@@ -1,0 +1,47 @@
+.payment{
+    background-color: white;
+}
+.payment_container >h1{
+    text-align: center;
+    padding: 10px;
+    font-weight: 400;
+    background-color: rgb(234, 237, 237);
+    border-bottom: 1px solid lightgray;
+}
+.payment_container>h1 a{
+    text-decoration: none;
+}
+
+/* using clever flexbox */
+.payment_section{
+  display: flex;
+  padding: 20px;
+  margin: 0 20px;
+  border-bottom: 1px solid lightgray;
+}
+/* flex will make them responsive as it defines the flex grow and shrink property */
+.payment_title{
+    flex: 0.2; /*it means that a title can take upto 20%*/
+
+}
+.payment_address , .payment_items , .payment_details{
+    flex: 0.8;/*payment address and items and details can take upto 80%*/
+}
+.payment_details >form{
+    max-width: 400px;
+}
+.payment_details >h3{
+    padding-bottom:20px ;
+}
+.payment_details > form > div > button{
+background: #f0c14b;
+border-radius: 2px;
+width: 100%;
+height: 30px;
+border: 1px solid;
+font-weight: bolder;
+margin-top: 10px;
+border-color: #a88734 #9c7e31 #846a29;
+color: #111;
+
+}
